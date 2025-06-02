@@ -11,8 +11,4 @@ module.exports = function(app) {
 	app.get('/', urlencodedParser, function(req, res) {
 		res.send(welcomeHtml);
 	});
-
-	app.get('*', urlencodedParser, function(req, res) {
-		res.send(welcomeHtml);
-	});
 }
